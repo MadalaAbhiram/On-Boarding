@@ -1,0 +1,43 @@
+@reference "./index.css";
+
+@layer components {
+  .panel-card {
+    @apply rounded-[24px] border border-stroke bg-surface px-6 py-5 shadow-soft;
+  }
+
+  .role-card {
+    @apply relative w-full overflow-hidden rounded-[18px] border border-stroke bg-surface px-5 py-5 text-left transition duration-200;
+  }
+
+  .role-card-user {
+    @apply hover:border-brand/40 hover:shadow-soft;
+  }
+
+  .role-card-admin {
+    @apply hover:border-brand/40 hover:shadow-soft;
+  }
+
+  .glass-panel {
+    @apply rounded-[28px] border border-stroke bg-surface shadow-soft;
+  }
+
+  .hud-chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-stroke bg-surfaceMuted px-4 py-2 text-xs uppercase tracking-[0.24em] text-textSoft;
+  }
+
+  .soft-button {
+    @apply inline-flex items-center justify-center rounded-full border border-stroke bg-surface px-5 py-3 text-sm font-medium text-textMain transition hover:border-brand/40 hover:text-brand;
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-medium text-white transition hover:bg-brandDark;
+  }
+
+  .integration-tab {
+    @apply border-b-2 border-transparent px-1 pb-3 text-sm text-textSoft transition hover:text-textMain;
+  }
+
+  .integration-tab-active {
+    @apply border-brand text-brand;
+  }
+}
